@@ -1,0 +1,32 @@
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[user]
+	name = Gerardo Martinez
+	email = gmart_nez@yahoo.com.mx
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[url "https://"]
+	insteadOf = git://
+[core]
+	editor = vim
+	autocrlf = input
+[merge]
+	tool = opendiff
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[color]
+	ui = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+	pushall = push --recurse-submodules=on-demand
+[hub]
+	protocol = https
+[pull]
+	rebase = true
