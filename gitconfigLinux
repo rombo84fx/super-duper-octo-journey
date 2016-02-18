@@ -1,0 +1,17 @@
+[user]
+	name = rombo84fx
+	email = gmart_nez@yahoo.com.mx
+[core]
+	autocrlf = input
+	editor = vim
+	ui = true
+[alias]
+	pushall = push --recurse-submodules=on-demand
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+[push]
+	default = simple
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
